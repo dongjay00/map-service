@@ -18,7 +18,7 @@ export default Example;
 export async function getStaticProps() {
   const delayInSeconds = 2;
   const data = await new Promise((resolve) =>
-    setTimeout(() => resolve(1), delayInSeconds * 1000)
+    setTimeout(() => resolve(Math.random()), delayInSeconds * 1000)
   );
 
   return {
