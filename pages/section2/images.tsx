@@ -8,7 +8,7 @@ const Images: NextPage = () => {
   return (
     <main>
       {/* loading check */}
-      <section style={{ height: '500vh' }}>long long content</section>
+      {/* <section style={{ height: '500vh' }}>long long content</section> */}
 
       <hr style={{ margin: '32px 0' }} />
 
@@ -26,64 +26,67 @@ const Images: NextPage = () => {
         <figcaption>example img</figcaption>
       </figure>
 
-      {/*<hr style={{ margin: '32px 0' }} />*/}
+      <hr style={{ margin: '32px 0' }} />
 
-      {/* <h1>next/image</h1> */}
+      <h1>next/image</h1>
 
-      {/* <figure>
+      {/** static */}
+      <figure>
         <Image
           src={example}
           alt="v13 image"
-          // width={500}
-          // height={100}
-          // placeholder="blur"
+          width={500}
+          height={100}
+          placeholder="blur"
+          // quality={100}
         />
         <figcaption>v13 image</figcaption>
-      </figure> */}
+      </figure>
 
-      {/* <figure>
+      <figure>
         <Image
           src="https://inflearn-nextjs.vercel.app/example.jpg"
           alt="v13 image"
           width={500}
           height={100}
+          // placeholder="blur"
         />
         <figcaption>v13 image</figcaption>
-      </figure> */}
+      </figure>
 
       {/* ERROR */}
-      {/*<figure>*/}
-      {/*  <Image src="/example.jpg" alt="v13 image" />*/}
-      {/*  <figcaption>v13 image</figcaption>*/}
-      {/*</figure>*/}
+      {/* <figure> */}
+      {/* <Image src="/example.jpg" alt="v13 image" /> */}
+      {/* <figcaption>v13 image</figcaption> */}
+      {/* </figure> */}
 
-      {/* <figure style={{ position: 'relative', width: '500px', height: '100px' }}>
+      <figure style={{ position: 'relative', width: '500px', height: '100px' }}>
         <Image
           src="https://inflearn-nextjs.vercel.app/example.jpg"
           alt="v13 fill"
           fill
           style={{ objectFit: 'cover' }}
         />
-      </figure> */}
+      </figure>
 
-      {/* <hr style={{ margin: '32px 0' }} /> */}
+      <hr style={{ margin: '32px 0' }} />
 
-      {/* <h1>next/legacy/image</h1> */}
+      <h1>next/legacy/image</h1>
 
       {/** statically import */}
-      {/* <figure>
-        <LegacyImage src={example} alt="example image" />
+      <figure>
+        <LegacyImage src={example} layout="intrinsic" alt="example image" />
         <figcaption>intrinsic static image</figcaption>
-      </figure> */}
+      </figure>
 
       {/* ERROR */}
-      {/*<figure>*/}
-      {/*  <Image src="/example.jpg" alt="example" />*/}
-      {/*  <figcaption>example image</figcaption>*/}
-      {/*</figure>*/}
+      {/* <figure>
+        <Image src="/example.jpg" alt="example" />
+        <figcaption>example image</figcaption>
+      </figure> */}
 
       {/** path string */}
-      {/* <figure>
+      <figure>
         <LegacyImage
           src="/example.jpg"
           alt="intrinsic image"
@@ -91,9 +94,9 @@ const Images: NextPage = () => {
           height={100}
         />
         <figcaption>intrinsic remote image</figcaption>
-      </figure> */}
+      </figure>
 
-      {/* <figure>
+      <figure>
         <LegacyImage
           src={example}
           alt="fixed image"
@@ -102,9 +105,9 @@ const Images: NextPage = () => {
           height={100}
         />
         <figcaption>fixed image</figcaption>
-      </figure> */}
+      </figure>
 
-      {/* <figure>
+      <figure>
         <LegacyImage
           src={example}
           alt="responsive image"
@@ -113,9 +116,9 @@ const Images: NextPage = () => {
           height={100}
         />
         <figcaption>responsive image</figcaption>
-      </figure> */}
+      </figure>
 
-      {/* <figure>
+      <figure>
         <div style={{ width: 500, height: 100, position: 'relative' }}>
           <LegacyImage
             src="/example.jpg"
@@ -125,9 +128,9 @@ const Images: NextPage = () => {
           />
         </div>
         <figcaption>fill image</figcaption>
-      </figure> */}
+      </figure>
 
-      {/* <hr style={{ margin: '32px 0' }} /> */}
+      <hr style={{ margin: '32px 0' }} />
     </main>
   );
 };
